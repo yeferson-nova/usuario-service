@@ -8,6 +8,6 @@ class UsuarioServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Contexto cargado correctamente");
 	}
-
 }

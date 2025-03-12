@@ -2,7 +2,6 @@ package com.ynova.msvc.usuario.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ynova.msvc.usuario.entity.Usuario;
@@ -12,8 +11,11 @@ import com.ynova.msvc.usuario.repository.UsuarioRepository;
 @Service
 public class UsuarioServiceImpl implements UsuarioService {
 
-    @Autowired
     private UsuarioRepository usuarioRepository;
+
+    public UsuarioServiceImpl(UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
+    }
 
     @Override
     public Usuario saveUsuario(Usuario usuario) {
