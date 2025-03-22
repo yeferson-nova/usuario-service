@@ -15,4 +15,5 @@ public class Calificacion {
     private Long hotelId;
     private int calificacion;
     private String comentario;
+    private Hotel hotel;
 }

@@ -9,7 +9,7 @@ import com.ynova.msvc.usuario.response.ApiResponse;
 @RestControllerAdvice
 public class GlobalExceptionController {
 
-    public ResponseEntity<ApiResponse> handlerResourceNotFoundException(ResourceNotFoundExeption resourceNotFoundException) {
+    public ResponseEntity<ApiResponse> handlerResourceNotFoundException(ResourceNotFoundException resourceNotFoundException) {
         String message = resourceNotFoundException.getMessage();
 
         ApiResponse apiResponse = ApiResponse.builder()
