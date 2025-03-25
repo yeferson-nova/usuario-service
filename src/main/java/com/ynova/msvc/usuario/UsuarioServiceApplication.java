@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.commons.util.InetUtils;
 import org.springframework.cloud.netflix.eureka.EurekaInstanceConfigBean;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
@@ -13,6 +14,7 @@ import jakarta.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableFeignClients
 public class UsuarioServiceApplication {
 
 	@Autowired
